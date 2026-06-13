@@ -12,6 +12,17 @@ triggers:
   - "找文件"
   - "搜全盘"
   - "everything search"
+  - "any project called"
+  - "I have a project"
+  - "previous code"
+  - "where did I put"
+  - "codebase on this machine"
+  - "项目在哪"
+  - "之前的代码"
+  - "我写过"
+  - "有没有.*项目"
+  - "有什么.*代码"
+  - "本地.*搜"
 ---
 
 # Everything Search CLI
