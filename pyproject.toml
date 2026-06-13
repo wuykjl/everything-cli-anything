@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-anything-everything"
+version = "1.0.0"
+description = "Lightning-fast Windows file search CLI for AI agents — powered by voidtools Everything"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "wuykjl"}]
+keywords = ["everything", "everything-search", "voidtools", "file-search", "windows", "cli", "ai-agent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+everything = "cli_anything.everything.everything_cli:main"
+cli-anything-everything = "cli_anything.everything.everything_cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cli_anything.*"]
