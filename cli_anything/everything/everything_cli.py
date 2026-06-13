@@ -85,11 +85,6 @@ def cmd_search(
     results = backend.search(
         query=query,
         max_results=max,
-        match_path=match_path,
-        match_case=case_sensitive,
-        match_whole_word=whole_word,
-        regex=regex,
-        sort_by=sort_by,
         folders_only=folders,
         files_only=files,
     )
